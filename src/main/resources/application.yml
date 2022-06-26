@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: ${app_datasource_ddl_auto}
+    properties:
+      hibernate:
+        dialect: ${app_datasource_dialect}
+        show-sql: false
+  datasource:
+    url: ${app_datasource_url}
+    username: ${app_datasource_username}
+    password: ${app_datasource_password}
