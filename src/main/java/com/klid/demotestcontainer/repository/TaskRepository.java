@@ -1,5 +1,6 @@
-package com.klid.demotestcontainer;
+package com.klid.demotestcontainer.repository;
 
+import com.klid.demotestcontainer.model.Task;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

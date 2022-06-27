@@ -1,5 +1,7 @@
-package com.klid.demotestcontainer;
+package com.klid.demotestcontainer.service;
 
+import com.klid.demotestcontainer.model.Task;
+import com.klid.demotestcontainer.repository.TaskRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
@@ -20,7 +22,7 @@ public class TaskService {
     @Transactional
     public String create(String title) {
         var task = new Task(title);
-        taskRepository.save(task);
+      task = taskRepository.save(task);
         return task.getId();
     }
 

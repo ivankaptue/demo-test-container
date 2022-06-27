@@ -1,5 +1,7 @@
-package com.klid.demotestcontainer;
+package com.klid.demotestcontainer.controller;
 
+import com.klid.demotestcontainer.model.Task;
+import com.klid.demotestcontainer.service.TaskService;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
