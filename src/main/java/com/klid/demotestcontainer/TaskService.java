@@ -2,7 +2,6 @@ package com.klid.demotestcontainer;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -55,7 +54,7 @@ public class TaskService {
 
     @Transactional(readOnly = true)
     public Page<Task> all(int page, int size) {
-        return taskRepository.findAll(PageRequest.of(page, size, Sort.by("title")));
+        return taskRepository.all(PageRequest.of(page, size));
     }
 
     @Transactional(readOnly = true)

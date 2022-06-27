@@ -1,0 +1,9 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: 'create-drop'
+  datasource:
+    #    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+    url: jdbc:tc:postgresql:13.2:///demo_test_container
+  flyway:
+    enabled: false
